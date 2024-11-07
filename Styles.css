@@ -1,0 +1,220 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+}
+  
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around; /* Adjusted for even spacing */
+    background-color: rgba(0, 0, 0, 0.5); /* Set navbar to transparent */
+    padding: 15px; /* Increased padding for more spacing */
+}
+  
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+  
+section {
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
+}
+  
+#hero {
+    background-image: url('./assets/Background_Images/wallpaperflare.com_wallpaper (1).jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+  
+#hero button {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+  
+/* Services Section Styles */
+#services {
+    background-image: url('./assets/Background_Images/wallpaperflare.com_wallpaper (3).jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    color: white;
+    min-height: 80vh;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.service-column {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Slightly transparent background for readability */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.service-column img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.service-column p {
+    font-size: 1rem;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .service-grid {
+        grid-template-columns: 1fr; /* Stack columns on smaller screens */
+    }
+}
+
+  
+/* Testimonials Section Styles */
+#testimonials {
+    background-image: url('./assets/Background_Images/wallpaperflare.com_wallpaper (4).jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    min-height: 80vh;
+    position: relative;
+    z-index: 2;
+}
+
+#testimonials::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for better readability */
+    z-index: 1;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal-width columns */
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+    margin-top: 30px;
+}
+
+.testimonial-column {
+    background-color: rgba(0, 0, 0, 0.6); /* Transparent background for readability */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+.testimonial-column img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.testimonial-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.testimonial-column p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 1024px) {
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonials-grid {
+        grid-template-columns: 1fr; /* Stack columns on small screens */
+    }
+}
+  
+#contact {
+    background-color: #333;
+}
+  
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+  
+form label {
+    margin-top: 15px;
+}
+  
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+}
+  
+form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+/* Responsive Design */
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 2rem;
+    }
+  
+    nav ul {
+        flex-direction: column;
+    }
+  
+    nav ul li {
+        margin: 10px 0;
+    }
+}

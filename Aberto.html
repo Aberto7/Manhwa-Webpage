@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aberto's Website</title>
+  <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h1>Assalam-o-Alikum </h1> <h2>Welcome to Aberto's Website</h2>
+  </br><button id="getStartedBtn">Get Started</button>
+  </section>
+
+  <!-- Services Section -->
+<section id="services">
+    <h2>Our Services</h2>
+    <p>Explore the wide range of Web-Novels that we offer.</p>
+    
+    <div class="service-grid">
+      <!-- Service Column 1 -->
+      <div class="service-column">
+        <img src="./assets/Novel_Images/Beast-Tamer-Awakening-a-Mythical-Talent-at-the-Beginning.jpg" alt="Service 1 Image">
+        <p>Beast Tamer: Awakening a Mythical Talent at the Beginning</p>
+      </div>
+  
+      <!-- Service Column 2 -->
+      <div class="service-column">
+        <img src="./assets/Novel_Images/Fantasy-I-Adding-Friends-And-Become-Stronger.jpg" alt="Service 2 Image">
+        <p>Fantasy: I! Adding Friends And Become Stronger!</p>
+      </div>
+  
+      <!-- Service Column 3 -->
+      <div class="service-column">
+        <img src="./assets/Novel_Images/Unparalleled-understanding-achieved-immortality-at-the-age-of-eight-shocking-my-master.jpeg" alt="Service 3 Image">
+        <p>Unparalleled Understanding, Achieved Immortality at the Age of Eight, Shocking My Master!</p>
+      </div>
+    </div>
+  </section>
+  >
+
+  <!-- Testimonials Section -->
+
+<section id="testimonials">
+    <h2>Manhwa Section</h2>
+    <p>Discover what Manwha our clients love!</p>
+    
+    <!-- Testimonials Grid -->
+    <div class="testimonials-grid">
+      <!-- Testimonial Column 1 -->
+      <div class="testimonial-column">
+        <img src="./assets/Manhwa_Images/Absolute_Sword.jpeg" alt="Absolute_Sword">
+        <h3>Absolute Sword Sense</h3>
+        <p>After being given up on by his family because his dantian was destroyed, Soh Woonhwi was kidnapped by the Blood Cult and lived as a third-rate spy. One day, he died while being used to find a legendary sword immortal's secret records. However, he returned to the day he was kidnapped ten years ago and obtained a mysterious ability that allowed him to hear the voice of swords</p>
+      </div>
+  
+      <!-- Testimonial Column 2 -->
+      <div class="testimonial-column">
+        <img src="./assets/Manhwa_Images/Chronicles.jpeg" alt="Chronicles">
+        <h3>Chronicles Of the Demon Faction</h3>
+        <p>Chun Hajin, the strongest assassin of the Orthodox Murim's Righteous Heavenly Alliance. Hajin loses his life as he tries to escape to find freedom.And then...'The divine cult is immortal, may all demons submit. Congratulations on your recovery, third young master!'He was reincarnated into the body of Murim's public enemy, the third young master of the Demonic Cult?!The conquest of the Demonic Murim by Chun Hajin, the strongest secret weapon of the Orthodox Murim, begins now.</p>
+      </div>
+  
+      <!-- Testimonial Column 3 -->
+      <div class="testimonial-column">
+        <img src="./assets/Manhwa_Images/Life_of_a_Magic.jpeg" alt="Life_of_a_Magic">
+        <h3>Life of a Magic Academy Mage</h3>
+        <p>Life as a magic academy mage. Graduate student Lee Han was born as the youngest son in another world's famous family of mages. He swore he would never go to another place with the word "academy" in it. However, the magic academy known as Einrogard completely ignored what he had promised himself. Being self-sufficient is a must; monsters may appear, and the professors are all total nutjobs! This is the beginning of a pitiful academy life that you have never seen before. "Will I be able to... graduate safely?"</p>
+      </div>
+  
+      <!-- Testimonial Column 4 -->
+      <div class="testimonial-column">
+        <img src="./assets/Manhwa_Images/Nano.jpeg" alt="Nano">
+        <h3>Nano Machine</h3>
+        <p>Nanotechnology meets martial arts at the Mashin Academy. Yeo-un’s mother may not be one of the High Priest’s six official wives, but his father’s blood still qualifies him for a chance at the position of Minor Priest. Will a mysterious nanomachine injection from a future descendent help Yeo-un in this fierce competition against his powerful half-siblings?</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Contact Form Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email">
+      <label for="message">Message</label>
+      <textarea id="message" name="message"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Inline JavaScript for Navigation -->
+  <script>
+    document.getElementById("getStartedBtn").addEventListener("click", function() {
+      document.getElementById("services").scrollIntoView({ behavior: "smooth" });
+    });
+  </script>
+
+</body>
+</html>
